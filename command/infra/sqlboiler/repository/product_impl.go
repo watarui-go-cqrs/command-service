@@ -16,7 +16,7 @@ import (
 
 type productRepositorySQLBoiler struct{}
 
-func NewproductRepositorySQLBoiler() products.ProductRepository {
+func NewProductRepositorySQLBoiler() products.ProductRepository {
 	models.AddProductHook(boil.AfterInsertHook, ProductAfterInsertHook)
 	models.AddProductHook(boil.AfterUpdateHook, ProductAfterUpdateHook)
 	models.AddProductHook(boil.AfterDeleteHook, ProductAfterDeleteHook)

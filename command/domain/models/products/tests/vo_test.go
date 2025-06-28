@@ -2,7 +2,7 @@ package products_test
 
 import (
 	"command-service/command/domain/models/products"
-	"command-service/errs"
+	"command-service/command/errs"
 
 	"github.com/google/uuid"
 	. "github.com/onsi/ginkgo/v2"

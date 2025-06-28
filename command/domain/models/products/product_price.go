@@ -1,7 +1,7 @@
 package products
 
 import (
-	"command-service/errs"
+	"command-service/command/errs"
 	"fmt"
 )
 

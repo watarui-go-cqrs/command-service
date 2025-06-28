@@ -1,7 +1,7 @@
 package categories
 
 import (
-	"command-service/errs"
+	"command-service/command/errs"
 	"regexp"
 	"unicode/utf8"
 )

@@ -1,7 +1,7 @@
 package categories
 
 import (
-	"command-service/errs"
+	"command-service/command/errs"
 
 	"github.com/google/uuid"
 )

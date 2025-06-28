@@ -2,7 +2,7 @@ package products
 
 import (
 	"command-service/command/domain/models/categories"
-	"command-service/errs"
+	"command-service/command/errs"
 
 	"github.com/google/uuid"
 )

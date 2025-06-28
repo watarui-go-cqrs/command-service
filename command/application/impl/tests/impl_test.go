@@ -1,0 +1,23 @@
+package impl_test
+
+import (
+	"command-service/command/infra/sqlboiler/handler"
+	"os"
+	"path/filepath"
+	"testing"
+
+	. "github.com/onsi/ginkgo/v2"
+	. "github.com/onsi/gomega"
+)
+
+func TestSrvImplPackage(t *testing.T) {
+	RegisterFailHandler(Fail)
+	RunSpecs(t, "Application Impl Package Tests")
+}
+
+var _ = BeforeSuite(func() {
+	absPath, _ := filepath.Abs("../../../infra/sqlboiler/config/database.toml")
+	os.Setenv("DATABASE_TOML_PATH", absPath)
+	err := handler.DBConnect()
+	Expect(err).NotTo(HaveOccurred(), "Database connection should be established successfully")
+})

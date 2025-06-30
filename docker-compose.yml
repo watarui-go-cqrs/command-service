@@ -1,0 +1,15 @@
+services:
+  commandservice:
+    container_name: command-service
+    hostname: commandservice
+    build: .
+    volumes:
+      - .:/go/src/command
+    ports:
+      - 8082:8082
+    networks:
+      - external
+networks:
+  external:
+    name: db_net
+    external: true
